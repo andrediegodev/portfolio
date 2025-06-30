@@ -1,0 +1,158 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+
+}
+
+
+.header h1 {
+    text-align: center;
+    line-height: 45px;
+    font-size: 2rem;
+}
+
+.header .photo {
+    margin-top: 2rem;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 4px solid rgb(255, 255, 255);
+}
+
+.informations {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(199, 199, 199);
+}
+
+.informations p {
+    margin: .5rem;
+}
+
+.informations p::before {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 0.5rem;
+}
+
+.informations .job::before {
+    background-image: url('/assets/icons/job.svg');
+    
+}
+
+.informations .location::before {
+    background-image: url('/assets/icons/location.svg');
+}
+
+.informations .email::before {
+    background-image: url('/assets/icons/email.svg');
+}
+
+.informations .phone::before {
+    background-image: url('/assets/icons/phone.svg');
+}
+
+
+
+.header .perfil-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-about {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.box-about::before,
+.box-about::after {
+  content: '';
+  position: absolute;
+  top: -5px; /* faz o anel ficar maior que a imagem, ajusta conforme seu gosto */
+  left: -5px;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border-radius: 50%;
+  background: conic-gradient( rgb(43, 43, 43),  rgb(43, 43, 43), #04baf7,  rgb(43, 43, 43));
+  animation: rotate-border 6s linear infinite;
+  z-index: 0; /* ESSENCIAL: colocar atrás */
+}
+
+.box-about::after {
+  animation-delay: 3s;
+}
+
+@keyframes rotate-border {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.efect-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #0f012b, #000);
+  position: relative;
+  z-index: 1; /* ESSENCIAL: garantir que a imagem fique na frente do anel */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.foto-perfil {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: contrast(1.4);
+  mix-blend-mode: lighten;
+  mask-image: linear-gradient(to top, transparent 5%, #09000b);
+  -webkit-mask-image: linear-gradient(to top, transparent 5%, #09000b);
+}
+
+
+@media only screen and (min-width: 370px) and (max-width: 390px) {
+  
+  .header h1 {
+    text-align: center;
+    line-height: 45px;
+    font-size: 1.6rem;
+}
+ 
+
+    
+}
+
+@media only screen and (min-width: 1024px) {
+  
+  .informations{
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+ 
+
+    
+}
