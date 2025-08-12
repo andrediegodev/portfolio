@@ -19,14 +19,15 @@ acordeoes.forEach(acordeon => {
            
              iconArrow.style.transform = `rotate(0deg)`;
              ativarAcordeon.style.display = `block`;
-             acordeon.style.backgroundColor = 'blueviolet';
+             acordeon.style.backgroundImage = 'linear-gradient(to right, #7e0fdfff, #9d4edd)';
+
 
 
     } else {
 
         iconArrow.style.transform = `rotate(-90deg)`;
         ativarAcordeon.style.display = 'none';
-        acordeon.style.backgroundColor = '';
+        acordeon.style.backgroundImage = '';
     }
 
     })
