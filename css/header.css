@@ -21,8 +21,47 @@
     border: 4px solid rgb(255, 255, 255);
 }
 
+.chamada{
+  margin-top: -0.3rem;
+  font-size: 1.5rem;
+}
+
+.zap{
+  background-color:rgb(128, 7, 243);
+  height: 5rem;
+  width: 20rem;
+  color: #ffffff;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: inline;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  
+  background: linear-gradient(45deg, #9d4edd, rgb(128, 7, 243),#00f404);
+  background-size: 600% 100%;
+  animation: gradientMove 6s ease infinite;
+  cursor: pointer;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.fa-whatsapp{
+  font-size: 1.6rem;
+}
+
+
+
+
 .informations {
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 100%;
     align-items: flex-start;
@@ -33,6 +72,8 @@
 
 .informations p {
     margin: .5rem;
+        display: none;
+
 }
 
 .informations p::before {
@@ -47,19 +88,26 @@
 
 .informations .job::before {
     background-image: url('/assets/icons/job.svg');
+    display: none;
     
 }
 
 .informations .location::before {
     background-image: url('/assets/icons/location.svg');
+        display: none;
+
 }
 
 .informations .email::before {
     background-image: url('/assets/icons/email.svg');
+        display: none;
+
 }
 
 .informations .phone::before {
     background-image: url('/assets/icons/phone.svg');
+        display: none;
+
 }
 
 
@@ -76,8 +124,6 @@
   border-radius: 50%;
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 
@@ -126,8 +172,8 @@
   object-fit: cover;
   filter: contrast(1.4);
   mix-blend-mode: lighten;
-  mask-image: linear-gradient(to top, transparent 5%, #09000b);
-  -webkit-mask-image: linear-gradient(to top, transparent 5%, #09000b);
+  mask-image: linear-gradient(to top, transparent 100%, #ffffff);
+  -webkit-mask-image: linear-gradient(to top, transparent 2%, #bb14e1);
 }
 
 

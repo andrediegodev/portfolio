@@ -1,12 +1,12 @@
 .acordeon{
     display: flex;
     flex-direction: column;
-    width:90%;
+    width:100%;
     border: 1px solid #fff;
     border-radius: 1rem;
-    margin: 1rem;
+    margin-top: 1rem;
     padding: 1rem;
-    justify-content: space-between;
+    justify-content: center;
     cursor: pointer;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .acordeon:hover{
-    background-color: blueviolet;
+    background: #7b2cbf;
     transition: ease-in 10ms;
 }
 
@@ -56,13 +56,11 @@
 
 
 
-
 .tools h3{
     font-size: 1.5rem;
 }
 
 .personal h3{
-    margin-top: 2.5rem;
     font-size: 1.5rem;
 }
 
@@ -95,7 +93,6 @@
 }
 
 
-
 .skills{
     display: block;
     gap: 2rem;
@@ -113,6 +110,141 @@ p.tecnologias{
 .idiomas li{
     line-height: 40px;
     font-size: 1.2rem;
+}
+
+
+.fa-square-js{
+    font-size: 4rem;
+}
+
+.fa-html5{
+    font-size: 4rem;
+
+}
+
+.fa-css3-alt{
+    font-size: 4rem;
+}
+
+.fa-wordpress{
+    font-size: 4rem;
+}
+
+.servicos-list{
+    list-style: none;
+    display: inline-flex;
+    margin-left: 1rem;
+    justify-content: center;
+    font-family: 'Open sans', 'sans-serif';
+}
+
+.servicos-list p{
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.planilha{
+    background-color: #1a0130;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 0.3rem;
+}
+
+
+
+.ecommerce{
+       background-color: #1a0130;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 0.3rem;
+}
+
+.wpp-automacao{
+       background-color: #1a0130;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 0.3rem;
+}
+
+.site{
+       background-color: #1a0130;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 0.3rem;
+}
+
+.landing{
+       background-color: #1a0130;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 0.3rem;
+}
+
+
+.container-servicos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+
+.fa-file-excel{
+    font-size: 3.5rem;
+    display: flex;
+}
+
+.excel{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.3rem;
+}
+
+.fa-shop{
+ font-size: 3.5rem;
+    display: flex;
+}
+
+.shop-icon{
+ display: flex;
+    justify-content: center;
+    margin-top: 1.3rem;
+}
+
+.wpp-service{
+     font-size: 3.5rem;
+    display: flex;
+}
+
+.wpp{
+     display: flex;
+    justify-content: center;
+    margin-top: 1.3rem;
+}
+
+.fa-window-restore{
+     font-size: 3.5rem;
+    display: flex;
+}
+
+.web{
+     display: flex;
+    justify-content: center;
+    margin-top: 1.3rem;
+}
+
+.page{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.3rem;
+}
+
+.fa-file{
+    font-size: 3.5rem;
+    display: flex;
 }
 
 
