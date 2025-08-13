@@ -6,7 +6,6 @@
 
 }
 
-
 .header h1 {
     text-align: center;
     line-height: 45px;
@@ -58,8 +57,6 @@
 }
 
 
-
-
 .informations {
     display: none;
     flex-direction: column;
@@ -87,29 +84,28 @@
 }
 
 .informations .job::before {
-    background-image: url('/assets/icons/job.svg');
+    background-image: url('assets/icons/job.svg');
     display: none;
     
 }
 
 .informations .location::before {
-    background-image: url('/assets/icons/location.svg');
+    background-image: url('assets/icons/location.svg');
         display: none;
 
 }
 
 .informations .email::before {
-    background-image: url('/assets/icons/email.svg');
+    background-image: url('assets/icons/email.svg');
         display: none;
 
 }
 
 .informations .phone::before {
-    background-image: url('/assets/icons/phone.svg');
+    background-image: url('assets/icons/phone.svg');
         display: none;
 
 }
-
 
 
 .header .perfil-about{
@@ -132,7 +128,7 @@
 .box-about::after {
   content: '';
   position: absolute;
-  top: -5px; /* faz o anel ficar maior que a imagem, ajusta conforme seu gosto */
+  top: -5px; 
   left: -5px;
   width: calc(100% + 10px);
   height: calc(100% + 10px);

@@ -131,12 +131,15 @@ p.tecnologias{
 }
 
 .servicos-list{
-    list-style: none;
-    display: inline-flex;
-    margin-left: 1rem;
+    display: flex;
+    padding: 0.5rem;
     justify-content: center;
     font-family: 'Open sans', 'sans-serif';
+    flex: 1;
+    background-color: #1a0130;
+    border-radius: 1rem;
 }
+
 
 .servicos-list p{
     font-size: 1rem;
@@ -146,55 +149,24 @@ p.tecnologias{
     justify-content: center;
 }
 
-.planilha{
-    background-color: #1a0130;
-    width: 10rem;
-    height: 10rem;
-    border-radius: 0.3rem;
-}
-
-
-
-.ecommerce{
-       background-color: #1a0130;
-    width: 10rem;
-    height: 10rem;
-    border-radius: 0.3rem;
-}
-
-.wpp-automacao{
-       background-color: #1a0130;
-    width: 10rem;
-    height: 10rem;
-    border-radius: 0.3rem;
-}
-
-.site{
-       background-color: #1a0130;
-    width: 10rem;
-    height: 10rem;
-    border-radius: 0.3rem;
-}
-
-.landing{
-       background-color: #1a0130;
-    width: 10rem;
-    height: 10rem;
-    border-radius: 0.3rem;
-}
-
 
 .container-servicos{
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
 
 .fa-file-excel{
     font-size: 3.5rem;
     display: flex;
+}
+
+.fa-file-excel:hover{
+    color: green;
 }
 
 .excel{
@@ -208,6 +180,10 @@ p.tecnologias{
     display: flex;
 }
 
+.fa-shop:hover{
+    color: yellow;
+}
+
 .shop-icon{
  display: flex;
     justify-content: center;
@@ -219,6 +195,10 @@ p.tecnologias{
     display: flex;
 }
 
+.wpp-service:hover{
+    color: green;
+}
+
 .wpp{
      display: flex;
     justify-content: center;
@@ -228,6 +208,10 @@ p.tecnologias{
 .fa-window-restore{
      font-size: 3.5rem;
     display: flex;
+}
+
+.fa-window-restore:hover{
+    color: #7b2cbf;
 }
 
 .web{
@@ -245,6 +229,10 @@ p.tecnologias{
 .fa-file{
     font-size: 3.5rem;
     display: flex;
+}
+
+.fa-file:hover{
+    color: rgb(33, 54, 240);
 }
 
 
